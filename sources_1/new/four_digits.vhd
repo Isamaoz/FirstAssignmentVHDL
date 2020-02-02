@@ -69,7 +69,7 @@ ARCHITECTURE Behav OF four_digits IS
             --an   : out STD_LOGIC_VECTOR (3 downto 0));
     END COMPONENT;
     SIGNAL current_state, next_state : toggle_sw;
-    SIGNAL reg: UNSIGNED(3 downto 0) := "1110";
+    SIGNAL reg: UNSIGNED(3 downto 0) := "0111";
     SIGNAL shifted: UNSIGNED(3 downto 0);
     SIGNAL seg3, seg2, seg1, seg0: STD_LOGIC_VECTOR(6 downto 0);
 BEGIN
