@@ -65,7 +65,22 @@ set_property PACKAGE_PIN U2 [get_ports {an[0]}]
 #CENTRAL BUTTON
 set_property IOSTANDARD LVCMOS33 [get_ports {button}]
         
-        set_property PACKAGE_PIN U18 [get_ports {button}]    
+        set_property PACKAGE_PIN U18 [get_ports {button}]
+ 
+set_property IOSTANDARD LVCMOS33 [get_ports {clock}]     
+    set_property PACKAGE_PIN W5 [get_ports {clock}]
+        
+set_property IOSTANDARD LVCMOS33 [get_ports {rst}]     
+        set_property PACKAGE_PIN T18 [get_ports {rst}]
+        
+set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]     
+                set_property PACKAGE_PIN P3 [get_ports {led[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]     
+        set_property PACKAGE_PIN V13 [get_ports {led[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]     
+        set_property PACKAGE_PIN W18 [get_ports {led[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]     
+        set_property PACKAGE_PIN U16 [get_ports {led[3]}]
         
         set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets button_IBUF]     
                 
